@@ -37,6 +37,11 @@ nav a {
     margin: 0 10px;
 }
 
+nav a#current{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 nav a:hover {
     background-color: #D6AD60;
     color: #122620;
