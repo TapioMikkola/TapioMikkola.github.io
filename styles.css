@@ -1,0 +1,103 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: url('joki1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #122620;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: rgba(182, 141, 64, 0.9);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: #F4EBD0;
+    font-size: 24px;
+}
+
+nav {
+    background-color: rgba(18, 38, 32, 0.9);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    display: inline-block;
+    color: #F4EBD0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #D6AD60;
+    color: #122620;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    background-color: rgba(244, 235, 208, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgba(182, 141, 64, 0.9);
+    color: #F4EBD0;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+h2, h3 {
+    color: #B68D40;
+}
+
+/* Responsive design: Adjust layout for small screens */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 16px;
+        margin: 5px;
+    }
+}
+
+/* For extra small screens (mobile phones) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav a {
+        padding: 10px;
+        width: 100%; /* Make the buttons full width */
+        margin: 5px 0; /* Add vertical spacing */
+    }
+    
+    main {
+        padding: 15px;
+    }
+}
